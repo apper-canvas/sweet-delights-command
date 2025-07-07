@@ -1,0 +1,137 @@
+[
+  {
+    "Id": 1,
+    "productId": 1,
+    "rating": 5,
+    "comment": "Absolutely amazing cake! The vanilla flavor was perfect and the buttercream frosting was so smooth and delicious. Perfect for my daughter's birthday party. Everyone loved it!",
+    "reviewerName": "Sarah Johnson",
+    "date": "2024-01-15T10:30:00Z",
+    "verified": true
+  },
+  {
+    "Id": 2,
+    "productId": 1,
+    "rating": 4,
+    "comment": "Great cake overall. The size was perfect for our small gathering. Only minor complaint is that it was a bit sweet for my taste, but the kids absolutely loved it.",
+    "reviewerName": "Mike Chen",
+    "date": "2024-01-10T14:22:00Z",
+    "verified": true
+  },
+  {
+    "Id": 3,
+    "productId": 1,
+    "rating": 5,
+    "comment": "This cake exceeded my expectations! Beautiful presentation and tasted even better than it looked. The custom message was perfectly written. Will definitely order again!",
+    "reviewerName": "Emily Rodriguez",
+    "date": "2024-01-08T16:45:00Z",
+    "verified": true
+  },
+  {
+    "Id": 4,
+    "productId": 2,
+    "rating": 5,
+    "comment": "Our wedding cake was absolutely stunning! The three-tier design was exactly what we wanted and the taste was incredible. All our guests complimented the cake. Worth every penny!",
+    "reviewerName": "Jennifer & David Smith",
+    "date": "2024-01-12T09:15:00Z",
+    "verified": true
+  },
+  {
+    "Id": 5,
+    "productId": 2,
+    "rating": 5,
+    "comment": "Perfect wedding cake! The attention to detail was amazing and the red velvet flavor was divine. The bakery worked with us to create exactly what we envisioned.",
+    "reviewerName": "Ashley Brown",
+    "date": "2024-01-05T11:30:00Z",
+    "verified": true
+  },
+  {
+    "Id": 6,
+    "productId": 3,
+    "rating": 4,
+    "comment": "Rich and decadent chocolate cake! My chocolate-loving family was thrilled. The fudge layers were incredible. Only wish it came in a larger size option.",
+    "reviewerName": "Robert Wilson",
+    "date": "2024-01-14T13:20:00Z",
+    "verified": true
+  },
+  {
+    "Id": 7,
+    "productId": 3,
+    "rating": 5,
+    "comment": "Best chocolate cake I've ever had! The ganache topping was perfect and the cake was so moist. Ordered for my husband's birthday and he was over the moon!",
+    "reviewerName": "Lisa Thompson",
+    "date": "2024-01-09T15:45:00Z",
+    "verified": true
+  },
+  {
+    "Id": 8,
+    "productId": 4,
+    "rating": 5,
+    "comment": "Beautiful red velvet cake for our anniversary! The cream cheese frosting was perfectly balanced and the cake was incredibly moist. Romantic presentation too!",
+    "reviewerName": "Maria Garcia",
+    "date": "2024-01-11T12:00:00Z",
+    "verified": true
+  },
+  {
+    "Id": 9,
+    "productId": 4,
+    "rating": 4,
+    "comment": "Good red velvet cake with nice flavor. The texture was great and it looked beautiful. Would have liked a bit more cream cheese frosting but overall very satisfied.",
+    "reviewerName": "John Davis",
+    "date": "2024-01-07T17:30:00Z",
+    "verified": false
+  },
+  {
+    "Id": 10,
+    "productId": 5,
+    "rating": 5,
+    "comment": "Perfect graduation cake! The custom decorations with our school colors were spot on. The funfetti flavor was a hit with all the young graduates. Highly recommend!",
+    "reviewerName": "Patricia Miller",
+    "date": "2024-01-13T14:15:00Z",
+    "verified": true
+  },
+  {
+    "Id": 11,
+    "productId": 6,
+    "rating": 4,
+    "comment": "Lovely tropical flavors! The coconut frosting was light and the pineapple filling was refreshing. Great for summer celebrations. Could use a bit more tropical fruit flavor.",
+    "reviewerName": "Kevin Lee",
+    "date": "2024-01-06T10:45:00Z",
+    "verified": true
+  },
+  {
+    "Id": 12,
+    "productId": 7,
+    "rating": 5,
+    "comment": "Amazing lemon cake! The lemon curd filling was the perfect balance of tart and sweet. The buttercream wasn't too heavy. This is now my go-to lemon cake!",
+    "reviewerName": "Amanda Taylor",
+    "date": "2024-01-04T16:20:00Z",
+    "verified": true
+  },
+  {
+    "Id": 13,
+    "productId": 8,
+    "rating": 5,
+    "comment": "My kids absolutely loved this funfetti cake! The colors were so vibrant and fun. Perfect for a children's birthday party. The cake was moist and flavorful.",
+    "reviewerName": "Michelle Anderson",
+    "date": "2024-01-03T11:10:00Z",
+    "verified": true
+  },
+  {
+    "Id": 14,
+    "productId": 9,
+    "rating": 4,
+    "comment": "Great carrot cake! The walnuts and raisins added nice texture. The cream cheese frosting was delicious. Would order again for sure. Maybe a bit less cinnamon next time.",
+    "reviewerName": "Daniel White",
+    "date": "2024-01-02T13:55:00Z",
+    "verified": false
+  },
+  {
+    "Id": 15,
+    "productId": 10,
+    "rating": 5,
+    "comment": "Absolutely gorgeous anniversary cake! The buttercream roses were so detailed and beautiful. The champagne flavor was unique and sophisticated. Perfect for our special day!",
+    "reviewerName": "Catherine Moore",
+    "date": "2024-01-01T18:40:00Z",
+    "verified": true
+  }
+]

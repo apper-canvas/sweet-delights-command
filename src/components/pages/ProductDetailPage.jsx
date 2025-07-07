@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import Button from '@/components/atoms/Button';
-import Card from '@/components/atoms/Card';
-import Input from '@/components/atoms/Input';
-import Select from '@/components/atoms/Select';
-import Textarea from '@/components/atoms/Textarea';
-import Badge from '@/components/atoms/Badge';
-import QuantitySelector from '@/components/molecules/QuantitySelector';
-import PriceTag from '@/components/molecules/PriceTag';
-import Loading from '@/components/ui/Loading';
-import Error from '@/components/ui/Error';
-import ApperIcon from '@/components/ApperIcon';
-import { productService } from '@/services/api/productService';
-import { useCart } from '@/hooks/useCart';
-import { toast } from 'react-toastify';
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import ReviewSection from "@/components/organisms/ReviewSection";
+import { useCart } from "@/hooks/useCart";
+import ApperIcon from "@/components/ApperIcon";
+import Badge from "@/components/atoms/Badge";
+import Select from "@/components/atoms/Select";
+import Button from "@/components/atoms/Button";
+import Card from "@/components/atoms/Card";
+import Textarea from "@/components/atoms/Textarea";
+import Input from "@/components/atoms/Input";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
+import PriceTag from "@/components/molecules/PriceTag";
+import QuantitySelector from "@/components/molecules/QuantitySelector";
+import { productService } from "@/services/api/productService";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
@@ -251,8 +252,11 @@ const ProductDetailPage = () => {
                 <span className="text-sm text-gray-600">Made with Love</span>
               </div>
             </div>
-          </motion.div>
+</motion.div>
         </div>
+
+        {/* Customer Reviews */}
+        <ReviewSection productId={id} />
       </div>
     </div>
   );
