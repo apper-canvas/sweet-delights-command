@@ -1,0 +1,231 @@
+[
+  {
+    "Id": 1,
+    "name": "Classic Vanilla Birthday Cake",
+    "description": "A timeless vanilla sponge cake with buttercream frosting, perfect for any birthday celebration.",
+    "category": "birthday",
+    "basePrice": 35,
+    "images": ["https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 35, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 45, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 65, "servings": "15-20" }
+    ],
+    "flavors": ["Vanilla", "Chocolate", "Strawberry", "Funfetti"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 2,
+    "name": "Elegant Wedding Cake",
+    "description": "A multi-tiered masterpiece featuring delicate buttercream flowers and elegant design.",
+    "category": "wedding",
+    "basePrice": 120,
+    "images": ["https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Two-Tier", "price": 120, "servings": "25-30" },
+      { "name": "Three-Tier", "price": 180, "servings": "50-60" },
+      { "name": "Four-Tier", "price": 250, "servings": "80-100" }
+    ],
+    "flavors": ["Vanilla", "Chocolate", "Red Velvet", "Lemon"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "1 week"
+    }
+  },
+  {
+    "Id": 3,
+    "name": "Chocolate Fudge Delight",
+    "description": "Rich chocolate cake layered with chocolate fudge and topped with chocolate ganache.",
+    "category": "birthday",
+    "basePrice": 40,
+    "images": ["https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 40, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 50, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 70, "servings": "15-20" }
+    ],
+    "flavors": ["Dark Chocolate", "Milk Chocolate", "Double Chocolate"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 4,
+    "name": "Red Velvet Romance",
+    "description": "Classic red velvet cake with cream cheese frosting, perfect for romantic occasions.",
+    "category": "anniversary",
+    "basePrice": 42,
+    "images": ["https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 42, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 52, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 72, "servings": "15-20" }
+    ],
+    "flavors": ["Red Velvet", "Pink Velvet", "Blue Velvet"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 5,
+    "name": "Graduation Success Cake",
+    "description": "Celebrate achievements with this custom graduation cake featuring school colors and decorations.",
+    "category": "graduation",
+    "basePrice": 55,
+    "images": ["https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Medium (8\")", "price": 55, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 75, "servings": "15-20" },
+      { "name": "Sheet Cake", "price": 85, "servings": "25-30" }
+    ],
+    "flavors": ["Vanilla", "Chocolate", "Funfetti", "Lemon"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "48 hours"
+    }
+  },
+  {
+    "Id": 6,
+    "name": "Tropical Fruit Paradise",
+    "description": "Light and airy sponge cake with tropical fruit flavors and coconut frosting.",
+    "category": "birthday",
+    "basePrice": 48,
+    "images": ["https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 48, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 58, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 78, "servings": "15-20" }
+    ],
+    "flavors": ["Pineapple", "Mango", "Coconut", "Passion Fruit"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 7,
+    "name": "Lemon Bliss Cake",
+    "description": "Zesty lemon cake with lemon curd filling and light lemon buttercream frosting.",
+    "category": "birthday",
+    "basePrice": 38,
+    "images": ["https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 38, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 48, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 68, "servings": "15-20" }
+    ],
+    "flavors": ["Lemon", "Lemon-Lime", "Meyer Lemon"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 8,
+    "name": "Funfetti Celebration",
+    "description": "Colorful funfetti cake that brings joy to any celebration with rainbow sprinkles throughout.",
+    "category": "birthday",
+    "basePrice": 36,
+    "images": ["https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 36, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 46, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 66, "servings": "15-20" }
+    ],
+    "flavors": ["Funfetti", "Birthday Cake", "Confetti"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 9,
+    "name": "Carrot Cake Supreme",
+    "description": "Moist carrot cake with walnuts and raisins, topped with cream cheese frosting.",
+    "category": "birthday",
+    "basePrice": 44,
+    "images": ["https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 44, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 54, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 74, "servings": "15-20" }
+    ],
+    "flavors": ["Traditional Carrot", "Spiced Carrot", "Carrot-Pineapple"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  },
+  {
+    "Id": 10,
+    "name": "Anniversary Rose Garden",
+    "description": "Romantic anniversary cake decorated with beautiful buttercream roses in elegant colors.",
+    "category": "anniversary",
+    "basePrice": 58,
+    "images": ["https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 58, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 68, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 88, "servings": "15-20" }
+    ],
+    "flavors": ["Vanilla", "Strawberry", "Champagne", "Rose"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "48 hours"
+    }
+  },
+  {
+    "Id": 11,
+    "name": "Custom Designer Cake",
+    "description": "Fully customized cake designed to your specifications with unlimited creative possibilities.",
+    "category": "custom",
+    "basePrice": 80,
+    "images": ["https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 80, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 100, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 140, "servings": "15-20" },
+      { "name": "Extra Large (12\")", "price": 180, "servings": "25-30" }
+    ],
+    "flavors": ["Any Flavor", "Multiple Flavors", "Specialty Flavors"],
+    "customizable": true,
+    "availability": {
+      "inStock": false,
+      "prepTime": "1 week"
+    }
+  },
+  {
+    "Id": 12,
+    "name": "Strawberry Shortcake Delight",
+    "description": "Light vanilla sponge cake with fresh strawberries and whipped cream, a summer favorite.",
+    "category": "birthday",
+    "basePrice": 46,
+    "images": ["https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop"],
+    "sizes": [
+      { "name": "Small (6\")", "price": 46, "servings": "6-8" },
+      { "name": "Medium (8\")", "price": 56, "servings": "10-12" },
+      { "name": "Large (10\")", "price": 76, "servings": "15-20" }
+    ],
+    "flavors": ["Strawberry", "Mixed Berry", "Strawberry-Vanilla"],
+    "customizable": true,
+    "availability": {
+      "inStock": true,
+      "prepTime": "24 hours"
+    }
+  }
+]

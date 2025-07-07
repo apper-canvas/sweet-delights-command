@@ -1,0 +1,83 @@
+[
+  {
+    "Id": 1,
+    "items": [
+      {
+        "productId": 1,
+        "quantity": 1,
+        "size": "Medium (8\")",
+        "flavor": "Vanilla",
+        "customMessage": "Happy Birthday Sarah!",
+        "price": 45
+      }
+    ],
+    "deliveryType": "delivery",
+    "scheduledDate": "2024-01-15",
+    "scheduledTime": "14:00",
+    "customerInfo": {
+      "name": "John Smith",
+      "email": "john@example.com",
+      "phone": "(555) 123-4567",
+      "address": "123 Main St",
+      "city": "Sweet Town",
+      "zipCode": "12345"
+    },
+    "specialRequests": "Please call before delivery",
+    "totalPrice": 58.99,
+    "status": "completed"
+  },
+  {
+    "Id": 2,
+    "items": [
+      {
+        "productId": 2,
+        "quantity": 1,
+        "size": "Three-Tier",
+        "flavor": "Vanilla",
+        "customMessage": "Mr. & Mrs. Johnson",
+        "price": 180
+      }
+    ],
+    "deliveryType": "pickup",
+    "scheduledDate": "2024-01-20",
+    "scheduledTime": "10:00",
+    "customerInfo": {
+      "name": "Emily Johnson",
+      "email": "emily@example.com",
+      "phone": "(555) 987-6543",
+      "address": "",
+      "city": "",
+      "zipCode": "12345"
+    },
+    "specialRequests": "Wedding cake for outdoor ceremony",
+    "totalPrice": 194.40,
+    "status": "in-progress"
+  },
+  {
+    "Id": 3,
+    "items": [
+      {
+        "productId": 3,
+        "quantity": 1,
+        "size": "Large (10\")",
+        "flavor": "Dark Chocolate",
+        "customMessage": "Congratulations!",
+        "price": 70
+      }
+    ],
+    "deliveryType": "delivery",
+    "scheduledDate": "2024-01-18",
+    "scheduledTime": "16:30",
+    "customerInfo": {
+      "name": "Michael Brown",
+      "email": "mike@example.com",
+      "phone": "(555) 456-7890",
+      "address": "456 Oak Ave",
+      "city": "Sweet Town",
+      "zipCode": "12345"
+    },
+    "specialRequests": "",
+    "totalPrice": 81.56,
+    "status": "pending"
+  }
+]
