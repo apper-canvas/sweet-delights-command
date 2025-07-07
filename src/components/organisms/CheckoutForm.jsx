@@ -149,19 +149,31 @@ const CheckoutForm = () => {
               </div>
             </Card>
 
-            {/* Schedule */}
+{/* Schedule */}
             <Card variant="gradient">
               <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
                 <ApperIcon name="Calendar" size={20} />
-                Schedule
+                Schedule & Availability
               </h3>
-              <DateTimePicker
-                date={formData.scheduledDate}
-                time={formData.scheduledTime}
-                onDateChange={(date) => handleInputChange('scheduledDate', date)}
-                onTimeChange={(time) => handleInputChange('scheduledTime', time)}
-                minDate={minDate}
-              />
+              <div className="space-y-4">
+                <div className="bg-accent/10 rounded-lg p-3 border border-accent/20">
+                  <div className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-1">
+                    <ApperIcon name="Clock" size={16} />
+                    Real-time Availability
+                  </div>
+                  <p className="text-xs text-gray-600">
+                    Select a date to see available time slots and current booking capacity
+                  </p>
+                </div>
+                
+                <DateTimePicker
+                  date={formData.scheduledDate}
+                  time={formData.scheduledTime}
+                  onDateChange={(date) => handleInputChange('scheduledDate', date)}
+                  onTimeChange={(time) => handleInputChange('scheduledTime', time)}
+                  minDate={minDate}
+                />
+              </div>
             </Card>
 
             {/* Customer Information */}
