@@ -16,12 +16,12 @@ import Loading from "@/components/ui/Loading";
 import PriceTag from "@/components/molecules/PriceTag";
 import QuantitySelector from "@/components/molecules/QuantitySelector";
 import { productService } from "@/services/api/productService";
-
+import { useWishlist } from "@/hooks/useWishlist";
 const ProductDetailPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
+const navigate = useNavigate();
   const { addToCart } = useCart();
-  
+  const { isInWishlist, toggleWishlist } = useWishlist();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -71,9 +71,26 @@ const ProductDetailPage = () => {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
-    });
+});
   };
 
+  const handleWishlistToggle = () => {
+    if (!product) return;
+    
+    toggleWishlist(product);
+    const isAdding = !isInWishlist(product.Id);
+    
+    toast.success(
+      isAdding 
+        ? `${product.name} added to wishlist!` 
+        : `${product.name} removed from wishlist!`,
+      {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+      }
+    );
+  };
   if (loading) return <Loading />;
   if (error) return <Error message={error} onRetry={loadProduct} />;
   if (!product) return <Error message="Product not found" />;
@@ -221,18 +238,33 @@ const ProductDetailPage = () => {
                 </span>
               </div>
             </div>
+{/* Wishlist & Add to Cart */}
+            <div className="flex gap-3">
+              <Button
+                variant={isInWishlist(product.Id) ? "secondary" : "ghost"}
+                size="lg"
+                onClick={handleWishlistToggle}
+                className="flex-shrink-0"
+              >
+                <ApperIcon 
+                  name="Heart" 
+                  size={20} 
+                  className={isInWishlist(product.Id) ? 'fill-current text-red-500' : ''} 
+                />
+                {isInWishlist(product.Id) ? 'Saved' : 'Save'}
+              </Button>
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={handleAddToCart}
+                className="flex-1"
+                icon="ShoppingCart"
+              >
+                Add to Cart
+              </Button>
+            </div>
 
-            {/* Add to Cart */}
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleAddToCart}
-              className="w-full"
-              icon="ShoppingCart"
-            >
-              Add to Cart
-            </Button>
-
+            {/* Product Features */}
             {/* Product Features */}
             <div className="grid grid-cols-2 gap-4 pt-6 border-t">
               <div className="flex items-center gap-2">

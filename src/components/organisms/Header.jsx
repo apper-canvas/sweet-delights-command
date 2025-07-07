@@ -6,22 +6,22 @@ import Button from '@/components/atoms/Button';
 import SearchBar from '@/components/molecules/SearchBar';
 import Badge from '@/components/atoms/Badge';
 import { useCart } from '@/hooks/useCart';
-
+import { useWishlist } from '@/hooks/useWishlist';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+const location = useLocation();
   const { cart } = useCart();
-
+  const { wishlist } = useWishlist();
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   const navigation = [
     { name: 'All Cakes', href: '/' },
     { name: 'Birthday', href: '/category/birthday' },
-    { name: 'Wedding', href: '/category/wedding' },
+{ name: 'Wedding', href: '/category/wedding' },
     { name: 'Custom Orders', href: '/custom' },
+    { name: 'Wishlist', href: '/wishlist' },
     { name: 'About', href: '/about' }
   ];
-
   const handleSearch = (searchTerm) => {
     // Implement search functionality
     console.log('Searching for:', searchTerm);
@@ -68,8 +68,22 @@ const Header = () => {
             <SearchBar onSearch={handleSearch} />
           </div>
 
-          {/* Cart & Menu */}
-          <div className="flex items-center gap-4">
+{/* Cart, Wishlist & Menu */}
+          <div className="flex items-center gap-2">
+            <Link to="/wishlist" className="relative">
+              <Button variant="ghost" size="sm" className="p-2">
+                <ApperIcon name="Heart" size={20} />
+                {wishlist.length > 0 && (
+                  <Badge 
+                    variant="secondary" 
+                    className="absolute -top-2 -right-2 h-6 w-6 rounded-full p-0 flex items-center justify-center text-xs"
+                  >
+                    {wishlist.length}
+                  </Badge>
+                )}
+              </Button>
+            </Link>
+            
             <Link to="/cart" className="relative">
               <Button variant="ghost" size="sm" className="p-2">
                 <ApperIcon name="ShoppingCart" size={20} />
@@ -83,7 +97,6 @@ const Header = () => {
                 )}
               </Button>
             </Link>
-
             {/* Mobile Menu Button */}
             <Button
               variant="ghost"

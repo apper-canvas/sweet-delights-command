@@ -7,11 +7,11 @@ import Badge from '@/components/atoms/Badge';
 import PriceTag from '@/components/molecules/PriceTag';
 import ApperIcon from '@/components/ApperIcon';
 import { useCart } from '@/hooks/useCart';
+import { useWishlist } from '@/hooks/useWishlist';
 import { toast } from 'react-toastify';
-
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
-
+  const { isInWishlist, toggleWishlist } = useWishlist();
   const handleQuickAdd = (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -33,17 +33,55 @@ const ProductCard = ({ product }) => {
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
-    });
+});
   };
 
+  const handleWishlistToggle = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    toggleWishlist(product);
+    const isAdding = !isInWishlist(product.Id);
+    
+    toast.success(
+      isAdding 
+        ? `${product.name} added to wishlist!` 
+        : `${product.name} removed from wishlist!`,
+      {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      }
+    );
+  };
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
       transition={{ duration: 0.2 }}
     >
-      <Link to={`/product/${product.Id}`}>
+<Link to={`/product/${product.Id}`}>
         <Card variant="gradient" className="group overflow-hidden hover:shadow-2xl transition-all duration-300">
           <div className="relative">
+            {/* Wishlist Heart Icon */}
+            <button
+              onClick={handleWishlistToggle}
+              className={`absolute top-3 right-3 z-10 p-2 rounded-full backdrop-blur-sm transition-all duration-200 ${
+                isInWishlist(product.Id) 
+                  ? 'bg-red-100 text-red-500 hover:bg-red-200' 
+                  : 'bg-white/80 text-gray-400 hover:text-red-500 hover:bg-red-50'
+              }`}
+              aria-label={isInWishlist(product.Id) ? 'Remove from wishlist' : 'Add to wishlist'}
+            >
+              <ApperIcon 
+                name="Heart" 
+                size={16} 
+                className={isInWishlist(product.Id) ? 'fill-current' : ''} 
+              />
+            </button>
+            
             <div className="aspect-square w-full bg-gradient-to-br from-pink-50 to-yellow-50 rounded-xl mb-4 overflow-hidden">
               <img
                 src={product.images[0]}

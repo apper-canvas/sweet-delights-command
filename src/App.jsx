@@ -10,7 +10,7 @@ import CheckoutPage from '@/components/pages/CheckoutPage';
 import OrderConfirmationPage from '@/components/pages/OrderConfirmationPage';
 import CustomOrderPage from '@/components/pages/CustomOrderPage';
 import AboutPage from '@/components/pages/AboutPage';
-
+import WishlistPage from '@/components/pages/WishlistPage';
 function App() {
   return (
     <Router>
@@ -23,9 +23,10 @@ function App() {
             <Route path="/product/:id" element={<ProductDetailPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
-            <Route path="/order-confirmation/:id" element={<OrderConfirmationPage />} />
+<Route path="/order-confirmation/:id" element={<OrderConfirmationPage />} />
             <Route path="/custom" element={<CustomOrderPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/wishlist" element={<WishlistPage />} />
           </Routes>
         </main>
         <ToastContainer
